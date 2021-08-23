@@ -1,22 +1,20 @@
-import { createRouter, createWebHistory } from "vue-router"
-import Home from '../components/home'
-import Success from '../components/success'
-
+import {createRouter, createWebHistory} from 'vue-router';
+import Home from '/src/components/Home.vue';
+import Success from '/src/components/success.vue';
 const routes = [
-    {
-        path:"/",
-        name:"Home",
-        component:"Home"
-    },
-        path:"/success",
-        name:"Success",
-        component:"Success"
-    }
-]
-
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
+  {
+    path: '/success',
+    name: 'Success',
+    component: Success,
+  },
+];
 const router = createRouter({
-    history: createWebHistory(),
-    routes
+  history: createWebHistory(),
+  routes,
 });
-
-export default router
+export default router;
